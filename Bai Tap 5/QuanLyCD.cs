@@ -82,5 +82,21 @@ namespace Bai_Tap_5
                 }    
             }    
         }
+        public void SapXepTangTheoTuaCD()
+        {
+            CD tam;
+            for (int i = 0; i < n; i ++)
+            {
+                for (int j = 1; j < n; j ++)
+                {
+                    if (ds[i].TuaCD.CompareTo(ds[j].TuaCD)> 0)
+                    {
+                        tam = ds[i];
+                        ds[i] = ds[j];
+                        ds[j] = tam;
+                    }    
+                }    
+            }    
+        }
     }
 }
